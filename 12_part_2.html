@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Properties</title>
+    <link rel="icon" href="../images/4.jpg">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: 'Staatliches', cursive;
+        }
+        .title{
+            color: palegreen;
+            margin: 30px auto;
+            text-align: center;
+            font-size: 70px;
+            font-weight: bolder;
+
+        }
+        .gallery{
+            width: 1000px;
+            margin: auto;
+            columns: 3 300px;
+            column-gap: 30px;
+        }
+        .gallery-img{
+            width: 100%;
+            margin-bottom: 30px;
+            border-radius: 20px;
+            filter: grayscale(100%);
+            transition: 0.9s;
+        }
+        .gallery-img:hover{
+            filter: grayscale(0%);
+        }
+
+
+        @media screen and (max-width:1024px) {
+            .gallery{
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="title"><span style="color: skyblue;">Naw Phaw Eh Htar</span> Gallery</div>
+    <div class="gallery">
+        <img src="../images/10.jpg" alt="" class="gallery-img">
+        <img src="../images/5.jpg" alt="" class="gallery-img">
+        <img src="../images/9.jpg" alt="" class="gallery-img">
+        <img src="../images/11.jpg" alt="" class="gallery-img">
+        <img src="../images/14.jpg" alt="" class="gallery-img">
+        <img src="../images/12.jpg" alt="" class="gallery-img">
+        <img src="../images/13.jpg" alt="" class="gallery-img">
+        <img src="../images/16.jpg" alt="" class="gallery-img">
+        <img src="../images/15.jpg" alt="" class="gallery-img">
+        <img src="../images/20.jpg" alt="" class="gallery-img">
+        <img src="../images/18.jpg" alt="" class="gallery-img">
+        <img src="../images/19.jpg" alt="" class="gallery-img">
+    </div>
+</body>
+</html>

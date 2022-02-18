@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex BOx Exercise</title>
+    <style>
+        *{
+            padding: 0px;
+            box-sizing: border-box;
+
+        }
+        .bg-orange{
+            background-color: rgba(68, 173, 100, 0.377);
+        }
+        .bg-blue{
+            background-color: rgba(156, 30, 146, 0.103)
+        }
+        .one{
+          display: flex;
+          height: 50vh;
+          background-color: tan;
+
+        }
+        .part{
+            flex-grow: 1;
+        }
+
+        .part.right{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .two{
+            display: flex;
+            width: 990px;
+            margin: auto;
+            justify-content: space-between;
+            margin-top: -50px;
+            box-shadow: 0 0 25px #00000025;
+        }
+
+        .two-part{
+            width: 300px;
+            text-align: center;
+            padding: 30px 15px;
+            background-color: #fff;
+            
+        }
+
+        .third{
+            width: 990px;
+            display: flex;
+            justify-content: center;
+            margin: 100px auto;
+
+        }
+        .third-part{
+            text-align: center;
+            width: 500px;
+            
+        }
+        .four{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f5f5f5;
+        }
+        .four-img{
+            width: 450px;
+        }
+        .four-part{
+            width: 450px;
+            padding: 0 50px;
+        }
+
+        .five{
+            display: flex;
+            background-color: #f9f9f9;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+        }
+        .five-img{
+            width: 450px;
+        }
+        .five-part{
+            width: 450px;
+            padding: 0 50px;
+            text-align: right;
+        }
+
+        @media screen and (max-width:480px){
+           .one,.two,.third,.four,.five{
+               display: flex;
+               flex-direction: column;
+           };
+
+           .two{
+               align-items: center;
+           }
+
+           section,div{
+               width: 100%!important;
+
+           };
+
+           
+        }
+    </style>
+</head>
+<body>
+        <section class="one">
+            <div class="part left bg-orange">
+                
+            </div>
+            <div class="part right bg-blue">
+                <div class="right-inner" style="width: 300px;">
+                    <h1>This is Title</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint, facere. Nisi fugit vitae totam magni atque dolorem cumque laudantium sint qui! Aliquam, labore voluptate qui eos optio reprehenderit culpa explicabo.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="two">
+            <div class="two-part">
+                <h1>This is Part Two Title One</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat aperiam qui dolorum accusamus corporis temporibus assumenda quaerat itaque. Autem, enim. Veniam dignissimos quod repellat doloribus ipsam quidem iste doloremque vitae.</p>
+            </div>
+            <div class="two-part">
+                <h1>This is Part Two Title Two</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat aperiam qui dolorum accusamus corporis temporibus assumenda quaerat itaque. Autem, enim. Veniam dignissimos quod repellat doloribus ipsam quidem iste doloremque vitae.</p>
+            </div>
+            <div class="two-part">
+                <h1>This is Part Two Title Three</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat aperiam qui dolorum accusamus corporis temporibus assumenda quaerat itaque. Autem, enim. Veniam dignissimos quod repellat doloribus ipsam quidem iste doloremque vitae.</p>
+            </div>
+        </section>
+
+
+        <section class="third">
+            <div class="third-part">
+                <h1>This is Third</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, beatae quod vitae earum praesentium voluptate, quibusdam maiores id architecto libero eligendi aliquam quo repellat optio dicta obcaecati doloremque cumque nobis.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt nulla labore, voluptate impedit quibusdam deserunt placeat in voluptatibus ea blanditiis possimus quo voluptatum rerum, beatae eum quam libero odit consectetur.
+                </p>
+            </div>
+        </section>
+
+        <section class="four">
+            <img src="../images/love.jpg" class="four-img" alt="">
+            <div class="four-part">
+                <h1>This is Naw Phaw Eh THar</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae aut hic nam consequuntur eum modi alias deleniti ad repellat libero quia eos, ipsum molestias obcaecati impedit dignissimos odio non. At?</p>
+            </div>
+        </section>
+
+
+        <section class="five">
+            <img src="../images/6.jpg" class="five-img" alt="">
+            <div class="five-part">
+                <h1>This is Naw Phaw Eh THar</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae aut hic nam consequuntur eum modi alias deleniti ad repellat libero quia eos, ipsum molestias obcaecati impedit dignissimos odio non. At?</p>
+            </div>
+            
+        </section>
+</body>
+</html>

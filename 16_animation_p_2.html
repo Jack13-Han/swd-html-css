@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../images/2.jpg">
+
+    <title>CSS Animation </title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500&display=swap');
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: 'Merriweather Sans', sans-serif;
+        }
+
+        .container{
+            width: 1000px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+            margin: auto;
+        }
+        .one{
+            width: 300px;
+            animation: toRight 2s linear;
+        }
+        .two{
+            width: 550px;
+            animation: toLeft 2s linear;
+        }
+        .two h1{
+
+            animation: toLeft 1.5s linear;
+            margin-bottom: 30px;
+        }
+
+        .two p{
+            animation: toLeft 3.5s linear ;
+        }
+
+
+        #heart{
+            width: 100px;
+            position: fixed;
+            bottom: 100px;
+            margin: auto;
+            left: 0px;
+            right: 0px;
+            animation: shake 0.4s infinite alternate;
+
+        }
+
+        @keyframes toRight {
+            from{
+                transform: translateX(-550px);
+            }
+
+            to{
+                transform: translateX(0px);
+            }
+        }
+
+        @keyframes toLeft {
+            from{
+                transform: translateX(550px);
+            }
+
+            to{
+                transform: translateX(0px);
+            }
+        }
+
+
+        @keyframes shake {
+            from{
+                transform: scale(1.5);
+            }
+            to{
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="one">
+            <img src="../images/16.jpg" alt="Naw Phaw Eh Htar">
+        </div>
+        <div class="two">
+            <h1>Naw Phaw Eh Htar</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse consectetur ratione fuga inventore similique nam explicabo totam! Fuga amet, sapiente doloribus quia earum deserunt praesentium alias fugit quasi magni tempora!</p>
+        </div>
+
+        
+    </div>
+
+    <img src="../images/heart.svg" id="heart" alt="">
+</body>
+</html>

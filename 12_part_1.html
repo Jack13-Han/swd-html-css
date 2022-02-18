@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Column Properties</title>
+    <link rel="icon" href="../images/3.jpg">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: 'Viaoda Libre', cursive;
+        }
+        body{
+            padding: 50px;
+        }
+
+        .heading{
+            color: rgb(223, 53, 10);
+            
+        }
+        .paragraph{
+            color:rgb(17, 7, 109) ;
+            column-count: 3;
+            column-width: 300px;
+            column-rule: 1px solid tomato;  
+            column-gap: 50px;
+            margin-top: 40px;
+
+        }
+        .paragraph p{
+            margin-bottom: 30px;
+          
+            line-height: 2;
+        }
+
+        .full{
+            column-span: all;
+            margin-top: 10px;
+        }
+        @media screen and (max-width:480px){
+            body{
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="heading">CSS 3 Properties</h1>
+    <div class="paragraph">
+        <p class="full">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil vitae eius omnis fugit, expedita in, voluptas, amet molestiae ea obcaecati exercitationem facere! Inventore sunt sint obcaecati ab hic delectus officiis!
+        </p>
+        
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique possimus quis molestias iure necessitatibus nobis quidem harum optio dolore, rerum error aperiam quaerat sunt nulla veritatis est tempore unde labore.
+        </p>
+
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique possimus quis molestias iure necessitatibus nobis quidem harum optio dolore, rerum error aperiam quaerat sunt nulla veritatis est tempore unde labore.
+        </p>
+
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique possimus quis molestias iure necessitatibus nobis quidem harum optio dolore, rerum error aperiam quaerat sunt nulla veritatis est tempore unde labore.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aspernatur esse debitis fuga optio eos voluptatem magni fugit ut, consequatur impedit ducimus, neque veniam, quo rem recusandae placeat ipsum hic.
+        </p>
+
+        <p class="full"> 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aspernatur esse debitis fuga optio eos voluptatem magni fugit ut, consequatur impedit ducimus, neque veniam, quo rem recusandae placeat ipsum hic.
+        </p>
+        
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aspernatur esse debitis fuga optio eos voluptatem magni fugit ut, consequatur impedit ducimus, neque veniam, quo rem recusandae placeat ipsum hic.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aspernatur esse debitis fuga optio eos voluptatem magni fugit ut, consequatur impedit ducimus, neque veniam, quo rem recusandae placeat ipsum hic.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aspernatur esse debitis fuga optio eos voluptatem magni fugit ut, consequatur impedit ducimus, neque veniam, quo rem recusandae placeat ipsum hic.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aspernatur esse debitis fuga optio eos voluptatem magni fugit ut, consequatur impedit ducimus, neque veniam, quo rem recusandae placeat ipsum hic.
+        </p>
+
+        
+    </div>
+</body>
+</html>

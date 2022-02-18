@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/love.jpg">
+    <title>CSS Shape</title>
+    <style>
+        div{
+            display: inline-block;
+        }
+        .square{
+            width: 50px;
+            height: 50px;
+            border: 1px solid pink;
+        }
+
+        .square-rounded{
+            border-radius: 10px;
+            width: 50px;
+            height: 50px;
+            border: 1px solid pink;
+        }
+
+        .rect{
+            width: 150px;
+            height: 100px;
+            border: 1px solid pink;
+        }
+
+        .circle{
+            width: 100px;
+            height: 100px;
+            border: 1px solid pink;
+            border-radius: 50px;
+            background-color: #948292;
+        }
+
+        .img-circle{
+            background-image: url(../images/five.jpg);
+            width: 100px;
+            height: 100px;
+            border: 1px solid pink;
+            border-radius: 50px;
+            background-size: cover;
+        }
+
+        .triangle{
+            border: 50px solid #fff;
+    
+    border-bottom-color: springgreen;   
+        }
+
+        .triangle-2{
+            border: 50px solid #fff;
+    
+    border-bottom-color: springgreen;
+    border-right-color: springgreen;
+        }
+        .triangle-3{
+            
+            border: 50px solid #fff;  
+    border-bottom-color: springgreen;
+    border-left-color: springgreen;
+        }
+        .triangle-4{
+            border: 50px solid #fff;
+    border-bottom-color: springgreen;
+    border-left-color: springgreen;
+        }
+
+        .envelope{
+            /* width: 100px; */
+    /* height: 100px; */
+    border: 50px solid #e0c5c5c2;
+    border-top-color: springgreen;
+    border-bottom: 10px;
+    border-radius: 10px;
+
+        }
+
+        .homework{
+            width: 100px;
+            height: 70px;
+            margin-left: 100px;
+            display: inline-block;
+           background-color: springgreen;
+
+            
+
+        }
+
+        .homework::before{
+            content: "";
+            border: 30px solid springgreen;
+            border-left-color: white;
+            position: absolute;
+            display: inline-block;
+            
+            
+        }
+
+        
+        .homework::after{
+            content: "";
+            border: 36px solid white;
+            border-left-color: springgreen;
+            position: absolute;
+            border-right-width: 0px;
+            margin-left: 100px;
+           
+            
+        }
+
+        .homework-2{
+            background-color: tomato;
+            width: 100px;
+            height: 70px;
+            margin-left: 100px;
+            
+
+        }
+        .homework-2::before{
+            border: 34px solid tomato;
+            border-left-color: white;
+            content: "";
+            position: absolute;
+            border-right-width: 0px;
+        }
+        .homework-2::after{
+            border: 35px solid white;
+            content: "";
+            position: absolute;
+            border-left-color: tomato;
+            border-right-width: 0px;
+            margin-left: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>HTML,CSS Shape</h1>
+    <div class="square"></div>
+    <div class="square-rounded"></div>
+    <div class="rect"></div>
+    <hr>
+
+    <div class="circle"></div>
+    <div class="img-circle"></div>
+    <hr>
+
+    <div class="triangle"></div>
+    <div class="triangle-2"></div>
+    <div class="triangle-3"></div>
+    <!-- <div class="triangle-4"></div> -->
+    <div class="envelope"></div>
+
+    <hr>
+    <div class="homework-2"></div>
+    <hr>
+    <div class="homework"></div>
+    <hr>
+    
+
+</body>
+</html>

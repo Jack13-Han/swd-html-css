@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/17.jpg">
+    <title>Animation Project 1</title>
+    <style>
+        .room{
+            background-image: url(../images/park.png);
+            width: 600px;
+            height: 500px;
+            margin: 100px auto;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            overflow: hidden;
+
+        }
+
+        .lu-div{
+            position: absolute;
+            transform: translate(195px, 345px);
+        }
+
+        .lu{
+           width: 100px; 
+           
+           
+        }
+
+        .boy{
+            animation: toLeft 5s linear;
+            /* animation-delay: 7s; */
+            transform: translateX(-200px);
+
+        }
+
+        .girl{
+            animation: toRight 5s linear;
+            /* animation-delay: 7s; */
+            transform: translate(200px);
+        }
+
+        .knife{
+            width: 100px;
+            position: absolute;
+            top: 340px;
+            left: 130px;
+            animation: slick 4s  linear ;
+            
+        }
+
+        .fa{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: white;
+            animation: aa 6s;
+
+        }
+
+
+        @keyframes slick {
+            0%{
+                top: 540px;
+            }
+
+            40%{
+                top: 340px;
+                transform: rotate(0deg);
+            }
+
+            50%{
+                transform: rotate(60deg);
+            }
+            60%{
+                transform: rotate(80deg) 
+            }
+            65%{
+                transform: translateX(100px);
+            }
+            70%{
+
+                transform: translateX(0px);
+            }
+            75%{
+                transform: translateX(100px) rotate(60deg);
+            }
+
+            80%{
+                transform: rotate(-360deg) translate(150px) ;
+            }
+
+            85%{
+                transform: translate(300px);
+            }
+
+            100%{
+                transform: translate(300px);
+            }
+        }
+
+
+
+        @keyframes toLeft {
+            0%{
+                transform: translateX(0px);
+            }
+
+            80%{
+                transform: translateX(0px);
+            }
+
+            100%{
+                transform: translateX(-200px);
+            }
+        }
+
+        @keyframes toRight {
+            0%{
+                transform: translateX(0px);
+            }
+
+            80%{
+                transform: translateX(0px);
+            }
+
+            100%{
+                transform: translate(200px);
+            }
+        }
+
+
+        @keyframes aa {
+            0%{
+                top: 550px;
+            }
+
+            80%{
+                top: 550px;
+            }
+
+            100%{
+                top: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="room">
+        <div class="lu-div">
+            <img src="../images/boy.png" alt="" class="lu boy">
+            <img src="../images/girl.png" alt="" class="lu girl">
+        </div>
+
+        <img src="../images/knife.png" class="knife" alt="">
+
+        <div class="fa" style="text-align: center;">
+            <img src="../images/fa.jpg" alt="">
+            <p >FA is the best</p>
+        </div>
+    </div>
+</body>
+</html>
